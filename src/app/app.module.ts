@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
@@ -13,6 +14,7 @@ import { appRoutes } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    NoopAnimationsModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes)
