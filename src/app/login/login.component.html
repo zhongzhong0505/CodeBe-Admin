@@ -1,19 +1,11 @@
 <div class="row">
   <form class="col s12  m10 offset-m1 l8 offset-l2 xl6 offset-xl3">
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="username" type="text" class="validate">
-        <label for="username">用户名</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="password" type="password" class="validate">
-        <label for="password">密码</label>
-      </div>
-    </div>
-    <button class="btn waves-effect waves-light" type="button" (click)="login()">登录
-      <i class="material-icons right">send</i>
-    </button>
+    <md-input-container >
+      <input mdInput placeholder="Email">
+    </md-input-container>
+    <md-input-container >
+      <input mdInput placeholder="Password">
+    </md-input-container>
+    <button md-button>Flat button</button>
   </form>
 </div>
