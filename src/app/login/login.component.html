@@ -1,15 +1,21 @@
-<div class="container" fxLayout='column'>
-  <div class="container" fxLayout='column'>
-      <md-input-container>
+<div class="container" fxLayout='row'>
+  <div fxFlex.sm="0" fxFlex.xs="0" fxFlex.md="20" fxFlex.xl="25"></div>
+
+  <div fxFlex.sm="100" fxFlex.xs="100" fxFlex.md="60" fxFlex.xl="50">
+    <div fxLayout="col">
+      <md-input-container fxFlex="100">
         <input mdInput placeholder="Email">
       </md-input-container>
+    </div>
+    <div fxLayout="col">
+      <md-input-container fxFlex="100">
+        <input mdInput placeholder="Password">
+      </md-input-container>
+    </div>
+    <button md-raised-button (click)="login()">Login
+      <i class="material-icons">send</i>
+    </button>
   </div>
-  <div class="container" fxLayout='column'>
-    <md-input-container>
-      <input mdInput placeholder="Password">
-    </md-input-container>
-  </div>
-  <button md-raised-button (click)="login()">Login
-    <i class="material-icons">send</i>
-  </button>
+
+  <div fxFlex.sm="0" fxFlex.xs="0" fxFlex.md="20" fxFlex.xl="25"></div>
 </div>

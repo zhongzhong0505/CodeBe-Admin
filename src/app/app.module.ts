@@ -8,6 +8,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 
+
 @NgModule({
   declarations: [
     AppComponent
